@@ -5,7 +5,7 @@ n = int(input("Введите размер списка: "))
 i=0# счетсик 2
 b=[]# список в который будут записываться локальные максимумы
 a = [randint(0, 100) for i in range(0, n)]
-print(a)
+print("Рандомно заполненный список: "a)
 for i in a:
     if a.index(i)==0:
         if a[a.index(i)]>a[a.index(i)+1]:
@@ -16,5 +16,5 @@ for i in a:
     else:
         if a[a.index(i)]>a[a.index(i)-1] or a[a.index(i)]>a[a.index(i)+1]:
             b.append(i)
-print(b)
-print("Минимальный из локальных максимумов", min(b))
+print("Список с локальными максимумами: "b)
+print("Минимальный из локальных максимумов: ", min(b))
