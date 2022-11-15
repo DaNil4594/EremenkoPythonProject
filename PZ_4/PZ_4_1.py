@@ -14,6 +14,6 @@ try:
             v *= a
             if a==b:
                 print(v)
-except Exeption:
+except Exception:
     print(" Ошибка. Введите корректное значение.")
 
